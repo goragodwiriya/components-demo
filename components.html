@@ -1,0 +1,2812 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Components - UI Component Library</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="header-content">
+        <div class="logo">
+          <i class="fas fa-cube"></i>
+          <span>UI Components</span>
+        </div>
+        <div class="header-actions">
+          <button id="themeToggle" class="theme-toggle">
+            <i class="fas fa-moon"></i>
+          </button>
+          <button id="sidebarToggle" class="sidebar-toggle">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="main-container">
+    <!-- Sidebar -->
+    <aside id="sidebar" class="sidebar">
+      <nav class="sidebar-nav">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#buttons" class="nav-link">
+              <i class="fas fa-mouse-pointer"></i>
+              <span>Buttons</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#forms" class="nav-link">
+              <i class="fas fa-edit"></i>
+              <span>Form Elements</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#cards" class="nav-link">
+              <i class="fas fa-square"></i>
+              <span>Cards</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#alerts" class="nav-link">
+              <i class="fas fa-exclamation-circle"></i>
+              <span>Alerts & Notifications</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#badges" class="nav-link">
+              <i class="fas fa-tag"></i>
+              <span>Badges & Tags</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#modals" class="nav-link">
+              <i class="fas fa-window-maximize"></i>
+              <span>Modals & Drawers</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#dropdowns" class="nav-link">
+              <i class="fas fa-chevron-down"></i>
+              <span>Dropdowns</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#accordion" class="nav-link">
+              <i class="fas fa-bars"></i>
+              <span>Accordion</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#tabs" class="nav-link">
+              <i class="fas fa-folder"></i>
+              <span>Tabs</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#tooltips" class="nav-link">
+              <i class="fas fa-comment-alt"></i>
+              <span>Tooltips & Popovers</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#navigation" class="nav-link">
+              <i class="fas fa-compass"></i>
+              <span>Navigation</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#pagination" class="nav-link">
+              <i class="fas fa-list-ol"></i>
+              <span>Pagination</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#tables" class="nav-link">
+              <i class="fas fa-table"></i>
+              <span>Tables</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#grids" class="nav-link">
+              <i class="fas fa-th"></i>
+              <span>Grid Layouts</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#avatars" class="nav-link">
+              <i class="fas fa-user-circle"></i>
+              <span>Avatars</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#loading" class="nav-link">
+              <i class="fas fa-spinner"></i>
+              <span>Loading States</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#toasts" class="nav-link">
+              <i class="fas fa-bell"></i>
+              <span>Toast Messages</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <div class="container">
+        <!-- Buttons Section -->
+        <section id="buttons" class="component-section">
+          <h2 class="section-title">Buttons</h2>
+          <p class="section-description">Button components for various actions and styles.</p>
+
+          <div class="component-showcase">
+            <div class="component-preview">
+              <h3>Button Variants</h3>
+              <div class="component-example">
+                <button class="btn btn-primary">Primary</button>
+                <button class="btn btn-secondary">Secondary</button>
+                <button class="btn btn-outline">Outline</button>
+                <button class="btn btn-ghost">Ghost</button>
+                <button class="btn btn-primary btn-icon">
+                  <i class="fas fa-download"></i>
+                  Download
+                </button>
+                <button class="btn btn-ghost btn-icon">
+                  <i class="fas fa-heart"></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="component-code">
+              <div class="code-header">
+                <h4>Code</h4>
+                <button class="copy-btn" data-target="button-code">
+                  <i class="fas fa-copy"></i>
+                  Copy
+                </button>
+              </div>
+              <pre id="button-code"><code>&lt;!-- HTML --&gt;
+&lt;button class="btn btn-primary"&gt;Primary&lt;/button&gt;
+&lt;button class="btn btn-secondary"&gt;Secondary&lt;/button&gt;
+&lt;button class="btn btn-outline"&gt;Outline&lt;/button&gt;
+&lt;button class="btn btn-ghost"&gt;Ghost&lt;/button&gt;
+&lt;button class="btn btn-primary btn-icon"&gt;
+    &lt;i class="fas fa-download"&gt;&lt;/i&gt;
+    Download
+&lt;/button&gt;
+&lt;button class="btn btn-ghost btn-icon"&gt;
+    &lt;i class="fas fa-heart"&gt;&lt;/i&gt;
+&lt;/button&gt;
+
+&lt;!-- CSS --&gt;
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 1rem;
+    border-radius: 0.375rem;
+    font-weight: 500;
+    transition: all 0.2s;
+    cursor: pointer;
+    border: none;
+    font-size: 0.875rem;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.btn-secondary {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.btn-outline {
+    background-color: transparent;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
+
+.btn-ghost {
+    background-color: transparent;
+    color: var(--text-color);
+}
+
+.btn-icon {
+    gap: 0.5rem;
+}</code></pre>
+            </div>
+          </div>
+        </section>
+
+        <!-- Form Elements Section -->
+        <section id="forms" class="component-section">
+          <h2 class="section-title">Form Elements</h2>
+          <p class="section-description">Various form input components for user data collection.</p>
+
+          <div class="component-showcase">
+            <div class="component-preview">
+              <h3>Input Fields</h3>
+              <div class="component-example">
+                <div class="form-group">
+                  <label for="text-input">Text Input</label>
+                  <input type="text" id="text-input" placeholder="Enter text here">
+                </div>
+                <div class="form-group">
+                  <label for="textarea">Textarea</label>
+                  <textarea id="textarea" rows="3" placeholder="Enter multiple lines of text"></textarea>
+                </div>
+                <div class="form-group">
+                  <label for="select">Select Dropdown</label>
+                  <select id="select">
+                    <option>Option 1</option>
+                    <option>Option 2</option>
+                    <option>Option 3</option>
+                  </select>
+                </div>
+              </div>
+
+              <h3>Checkboxes & Radio Buttons</h3>
+              <div class="component-example">
+                <div class="checkbox-group">
+                  <label class="checkbox-label">
+                    <input type="checkbox" checked>
+                    <span class="checkmark"></span>
+                    Option 1
+                  </label>
+                  <label class="checkbox-label">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                    Option 2
+                  </label>
+                </div>
+
+                <div class="radio-group">
+                  <label class="radio-label">
+                    <input type="radio" name="radio-group" checked>
+                    <span class="radio-mark"></span>
+                    Option A
+                  </label>
+                  <label class="radio-label">
+                    <input type="radio" name="radio-group">
+                    <span class="radio-mark"></span>
+                    Option B
+                  </label>
+                </div>
+              </div>
+
+              <h3>Toggle Switch</h3>
+              <div class="component-example">
+                <label class="toggle-switch">
+                  <input type="checkbox" checked>
+                  <span class="slider"></span>
+                </label>
+              </div>
+            </div>
+
+            <div class="component-code">
+              <div class="code-header">
+                <h4>Code</h4>
+                <button class="copy-btn" data-target="form-code">
+                  <i class="fas fa-copy"></i>
+                  Copy
+                </button>
+              </div>
+              <pre id="form-code"><code>&lt;!-- HTML --&gt;
+&lt;div class="form-group"&gt;
+    &lt;label for="text-input"&gt;Text Input&lt;/label&gt;
+    &lt;input type="text" id="text-input" placeholder="Enter text here"&gt;
+&lt;/div&gt;
+
+&lt;div class="form-group"&gt;
+    &lt;label for="textarea"&gt;Textarea&lt;/label&gt;
+    &lt;textarea id="textarea" rows="3" placeholder="Enter multiple lines of text"&gt;&lt;/textarea&gt;
+&lt;/div&gt;
+
+&lt;div class="form-group"&gt;
+    &lt;label for="select"&gt;Select Dropdown&lt;/label&gt;
+    &lt;select id="select"&gt;
+        &lt;option&gt;Option 1&lt;/option&gt;
+        &lt;option&gt;Option 2&lt;/option&gt;
+        &lt;option&gt;Option 3&lt;/option&gt;
+    &lt;/select&gt;
+&lt;/div&gt;
+
+&lt;!-- Checkbox --&gt;
+&lt;label class="checkbox-label"&gt;
+    &lt;input type="checkbox" checked&gt;
+    &lt;span class="checkmark"&gt;&lt;/span&gt;
+    Option 1
+&lt;/label&gt;
+
+&lt;!-- Radio --&gt;
+&lt;label class="radio-label"&gt;
+    &lt;input type="radio" name="radio-group" checked&gt;
+    &lt;span class="radio-mark"&gt;&lt;/span&gt;
+    Option A
+&lt;/label&gt;
+
+&lt;!-- Toggle Switch --&gt;
+&lt;label class="toggle-switch"&gt;
+    &lt;input type="checkbox" checked&gt;
+    &lt;span class="slider"&gt;&lt;/span&gt;
+&lt;/label&gt;
+
+&lt;!-- CSS --&gt;
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+input[type="text"],
+textarea,
+select {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: 0.375rem;
+    background-color: var(--card-bg);
+    color: var(--text-color);
+}
+
+.checkbox-label,
+.radio-label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 0.5rem;
+}
+
+.checkbox-label input,
+.radio-label input {
+    position: absolute;
+    opacity: 0;
+}
+
+.checkmark,
+.radio-mark {
+    width: 1.25rem;
+    height: 1.25rem;
+    border: 1px solid var(--border-color);
+    border-radius: 0.25rem;
+    margin-right: 0.5rem;
+    position: relative;
+}
+
+.radio-mark {
+    border-radius: 50%;
+}
+
+.toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 3rem;
+    height: 1.5rem;
+}
+
+.toggle-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--border-color);
+    transition: 0.3s;
+    border-radius: 1.5rem;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 1.125rem;
+    width: 1.125rem;
+    left: 0.1875rem;
+    bottom: 0.1875rem;
+    background-color: white;
+    transition: 0.3s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: var(--primary-color);
+}
+
+input:checked + .slider:before {
+    transform: translateX(1.5rem);
+}</code></pre>
+            </div>
+          </div>
+        </section>
+
+        <!-- Cards Section -->
+        <section id="cards" class="component-section">
+          <h2 class="section-title">Cards</h2>
+          <p class="section-description">Flexible card components for displaying content in various formats.</p>
+
+          <div class="component-showcase">
+            <div class="component-preview">
+              <h3>Card Variants</h3>
+              <div class="component-example">
+                <div class="card-grid">
+                  <div class="card">
+                    <div class="card-header">
+                      <h4>Basic Card</h4>
+                    </div>
+                    <div class="card-body">
+                      <p>This is a simple card with header and body content.</p>
+                    </div>
+                    <div class="card-footer">
+                      <button class="btn btn-primary btn-sm">Action</button>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="card-image">
+                      <img src="https://picsum.photos/seed/card1/300/200.jpg" alt="Card image">
+                    </div>
+                    <div class="card-body">
+                      <h4>Image Card</h4>
+                      <p>This card includes an image at the top.</p>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="card-image">
+                      <img src="https://picsum.photos/seed/product1/300/200.jpg" alt="Product image">
+                    </div>
+                    <div class="card-body">
+                      <div class="product-title">Product Name</div>
+                      <div class="product-price">$29.99</div>
+                      <p>This is a product card with pricing information.</p>
+                    </div>
+                    <div class="card-footer">
+                      <button class="btn btn-primary btn-sm">Add to Cart</button>
+                    </div>
+                  </div>
+
+                  <div class="card info-card">
+                    <div class="card-icon">
+                      <i class="fas fa-info-circle"></i>
+                    </div>
+                    <div class="card-body">
+                      <h4>Info Card</h4>
+                      <p>This card is designed to display information with an icon.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="component-code">
+              <div class="code-header">
+                <h4>Code</h4>
+                <button class="copy-btn" data-target="card-code">
+                  <i class="fas fa-copy"></i>
+                  Copy
+                </button>
+              </div>
+              <pre id="card-code"><code>&lt;!-- HTML --&gt;
+&lt;div class="card"&gt;
+    &lt;div class="card-header"&gt;
+        &lt;h4&gt;Basic Card&lt;/h4&gt;
+    &lt;/div&gt;
+    &lt;div class="card-body"&gt;
+        &lt;p&gt;This is a simple card with header and body content.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class="card-footer"&gt;
+        &lt;button class="btn btn-primary btn-sm"&gt;Action&lt;/button&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="card"&gt;
+    &lt;div class="card-image"&gt;
+        &lt;img src="image.jpg" alt="Card image"&gt;
+    &lt;/div&gt;
+    &lt;div class="card-body"&gt;
+        &lt;h4&gt;Image Card&lt;/h4&gt;
+        &lt;p&gt;This card includes an image at the top.&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="card info-card"&gt;
+    &lt;div class="card-icon"&gt;
+        &lt;i class="fas fa-info-circle"&gt;&lt;/i&gt;
+    &lt;/div&gt;
+    &lt;div class="card-body"&gt;
+        &lt;h4&gt;Info Card&lt;/h4&gt;
+        &lt;p&gt;This card is designed to display information with an icon.&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- CSS --&gt;
+.card {
+    background-color: var(--card-bg);
+    border-radius: 0.5rem;
+    box-shadow: var(--shadow-sm);
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+    max-width: 300px;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+}
+
+.card-header {
+    padding: 1rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.card-body {
+    padding: 1rem;
+}
+
+.card-footer {
+    padding: 1rem;
+    border-top: 1px solid var(--border-color);
+    display: flex;
+    justify-content: flex-end;
+}
+
+.card-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.card-icon {
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem 0;
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+
+.product-title {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.product-price {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+}</code></pre>
+            </div>
+          </div>
+        </section>
+
+        <!-- Alerts Section -->
+        <section id="alerts" class="component-section">
+          <h2 class="section-title">Alerts & Notifications</h2>
+          <p class="section-description">Alert components for displaying important messages to users.</p>
+
+          <div class="component-showcase">
+            <div class="component-preview">
+              <h3>Alert Types</h3>
+              <div class="component-example">
+                <div class="alert alert-success">
+                  <i class="fas fa-check-circle"></i>
+                  <div>
+                    <strong>Success!</strong> Your changes have been saved successfully.
+                  </div>
+                </div>
+
+                <div class="alert alert-warning">
+                  <i class="fas fa-exclamation-triangle"></i>
+                  <div>
+                    <strong>Warning!</strong> Please review your input before submitting.
+                  </div>
+                </div>
+
+                <div class="alert alert-error">
+                  <i class="fas fa-times-circle"></i>
+                  <div>
+                    <strong>Error!</strong> There was a problem processing your request.
+                  </div>
+                </div>
+
+                <div class="alert alert-info">
+                  <i class="fas fa-info-circle"></i>
+                  <div>
+                    <strong>Info:</strong> New features have been added to the dashboard.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="component-code">
+              <div class="code-header">
+                <h4>Code</h4>
+                <button class="copy-btn" data-target="alert-code">
+                  <i class="fas fa-copy"></i>
+                  Copy
+                </button>
+              </div>
+              <pre id="alert-code"><code>&lt;!-- HTML --&gt;
+&lt;div class="alert alert-success"&gt;
+    &lt;i class="fas fa-check-circle"&gt;&lt;/i&gt;
+    &lt;div&gt;
+        &lt;strong&gt;Success!&lt;/strong&gt; Your changes have been saved successfully.
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="alert alert-warning"&gt;
+    &lt;i class="fas fa-exclamation-triangle"&gt;&lt;/i&gt;
+    &lt;div&gt;
+        &lt;strong&gt;Warning!&lt;/strong&gt; Please review your input before submitting.
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="alert alert-error"&gt;
+    &lt;i class="fas fa-times-circle"&gt;&lt;/i&gt;
+    &lt;div&gt;
+        &lt;strong&gt;Error!&lt;/strong&gt; There was a problem processing your request.
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="alert alert-info"&gt;
+    &lt;i class="fas fa-info-circle"&gt;&lt;/i&gt;
+    &lt;div&gt;
+        &lt;strong&gt;Info:&lt;/strong&gt; New features have been added to the dashboard.
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- CSS --&gt;
+.alert {
+    display: flex;
+    align-items: flex-start;
+    padding: 0.75rem 1rem;
+    border-radius: 0.375rem;
+    margin-bottom: 1rem;
+}
+
+.alert i {
+    margin-right: 0.75rem;
+    font-size: 1.25rem;
+}
+
+.alert-success {
+    background-color: rgba(34, 197, 94, 0.1);
+    color: #15803d;
+    border-left: 4px solid #22c55e;
+}
+
+.alert-warning {
+    background-color: rgba(245, 158, 11, 0.1);
+    color: #a16207;
+    border-left: 4px solid #f59e0b;
+}
+
+.alert-error {
+    background-color: rgba(239, 68, 68, 0.1);
+    color: #b91c1c;
+    border-left: 4px solid #ef4444;
+}
+
+.alert-info {
+    background-color: rgba(59, 130, 246, 0.1);
+    color: #1e40af;
+    border-left: 4px solid #3b82f6;
+}</code></pre>
+            </div>
+          </div>
+        </section>
+
+        <!-- Badges Section -->
+        <section id="badges" class="component-section">
+          <h2 class="section-title">Badges & Tags</h2>
+          <p class="section-description">Small components for labeling and categorizing content.</p>
+
+          <div class="component-showcase">
+            <div class="component-preview">
+              <h3>Badge Variants</h3>
+              <div class="component-example">
+                <div class="badge-container">
+                  <span class="badge badge-primary">Primary</span>
+                  <span class="badge badge-secondary">Secondary</span>
+                  <span class="badge badge-success">Success</span>
+                  <span class="badge badge-warning">Warning</span>
+                  <span class="badge badge-error">Error</span>
+                  <span class="badge badge-info">Info</span>
+                </div>
+              </div>
+
+              <h3>Pill Badges</h3>
+              <div class="component-example">
+                <div class="badge-container">
+                  <span class="badge badge-primary badge-pill">Primary</span>
+                  <span class="badge badge-secondary badge-pill">Secondary</span>
+                  <span class="badge badge-success badge-pill">Success</span>
+                  <span class="badge badge-warning badge-pill">Warning</span>
+                  <span class="badge badge-error badge-pill">Error</span>
+                  <span class="badge badge-info badge-pill">Info</span>
+                </div>
+              </div>
+
+              <h3>Badges with Icons</h3>
+              <div class="component-example">
+                <div class="badge-container">
+                  <span class="badge badge-primary">
+                    <i class="fas fa-star"></i>
+                    Featured
+                  </span>
+                  <span class="badge badge-success">
+                    <i class="fas fa-check"></i>
+                    Verified
+                  </span>
+                  <span class="badge badge-error">
+                    <i class="fas fa-exclamation"></i>
+                    Alert
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="component-code">
+              <div class="code-header">
+                <h4>Code</h4>
+                <button class="copy-btn" data-target="badge-code">
+                  <i class="fas fa-copy"></i>
+                  Copy
+                </button>
+              </div>
+              <pre id="badge-code"><code>&lt;!-- HTML --&gt;
+&lt;span class="badge badge-primary"&gt;Primary&lt;/span&gt;
+&lt;span class="badge badge-secondary"&gt;Secondary&lt;/span&gt;
+&lt;span class="badge badge-success"&gt;Success&lt;/span&gt;
+&lt;span class="badge badge-warning"&gt;Warning&lt;/span&gt;
+&lt;span class="badge badge-error"&gt;Error&lt;/span&gt;
+&lt;span class="badge badge-info"&gt;Info&lt;/span&gt;
+
+&lt;!-- Pill Badges --&gt;
+&lt;span class="badge badge-primary badge-pill"&gt;Primary&lt;/span&gt;
+&lt;span class="badge badge-secondary badge-pill"&gt;Secondary&lt;/span&gt;
+
+&lt;!-- Badges with Icons --&gt;
+&lt;span class="badge badge-primary"&gt;
+    &lt;i class="fas fa-star"&gt;&lt;/i&gt;
+    Featured
+&lt;/span&gt;
+&lt;span class="badge badge-success"&gt;
+    &lt;i class="fas fa-check"&gt;&lt;/i&gt;
+    Verified
+&lt;/span&gt;
+
+&lt;!-- CSS --&gt;
+.badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.25rem 0.5rem;
+    font-size: 0.75rem;
+    font-weight: 500;
+    border-radius: 0.25rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.badge i {
+    margin-right: 0.25rem;
+}
+
+.badge-pill {
+    border-radius: 9999px;
+}
+
+.badge-primary {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.badge-secondary {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.badge-success {
+    background-color: #22c55e;
+    color: white;
+}
+
+.badge-warning {
+    background-color: #f59e0b;
+    color: white;
+}
+
+.badge-error {
+    background-color: #ef4444;
+    color: white;
+}
+
+.badge-info {
+    background-color: #3b82f6;
+    color: white;
+}
+
+.badge-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}</code></pre>
+            </div>
+          </div>
+        </section>
+
+        <!-- Modals Section -->
+        <section id="modals" class="component-section">
+          <h2 class="section-title">Modals & Drawers</h2>
+          <p class="section-description">Overlay components for dialogs and additional content.</p>
+
+          <div class="component-showcase">
+            <div class="component-preview">
+              <h3>Modal Dialog</h3>
+              <div class="component-example">
+                <button id="openModal" class="btn btn-primary">Open Modal</button>
+              </div>
+
+              <h3>Drawer</h3>
+              <div class="component-example">
+                <button id="openDrawer" class="btn btn-secondary">Open Drawer</button>
+              </div>
+            </div>
+
+            <div class="component-code">
+              <div class="code-header">
+                <h4>Code</h4>
+                <button class="copy-btn" data-target="modal-code">
+                  <i class="fas fa-copy"></i>
+                  Copy
+                </button>
+              </div>
+              <pre id="modal-code"><code>&lt;!-- HTML --&gt;
+&lt;button id="openModal" class="btn btn-primary"&gt;Open Modal&lt;/button&gt;
+
+&lt;!-- Modal --&gt;
+&lt;div id="modal" class="modal"&gt;
+    &lt;div class="modal-content"&gt;
+        &lt;div class="modal-header"&gt;
+            &lt;h3&gt;Modal Title&lt;/h3&gt;
+            &lt;button class="modal-close"&gt;&times;&lt;/button&gt;
+        &lt;/div&gt;
+        &lt;div class="modal-body"&gt;
+            &lt;p&gt;This is the modal content. You can put any HTML content here.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class="modal-footer"&gt;
+            &lt;button class="btn btn-secondary modal-close"&gt;Cancel&lt;/button&gt;
+            &lt;button class="btn btn-primary"&gt;Save Changes&lt;/button&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Drawer --&gt;
+&lt;button id="openDrawer" class="btn btn-secondary"&gt;Open Drawer&lt;/button&gt;
+
+&lt;div id="drawer" class="drawer"&gt;
+    &lt;div class="drawer-content"&gt;
+        &lt;div class="drawer-header"&gt;
+            &lt;h3&gt;Drawer Title&lt;/h3&gt;
+            &lt;button class="drawer-close"&gt;&times;&lt;/button&gt;
+        &lt;/div&gt;
+        &lt;div class="drawer-body"&gt;
+            &lt;p&gt;This is the drawer content that slides in from the side.&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- CSS --&gt;
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal.active {
+    display: flex;
+}
+
+.modal-content {
+    background-color: var(--card-bg);
+    border-radius: 0.5rem;
+    width: 90%;
+    max-width: 500px;
+    max-height: 90vh;
+    overflow: auto;
+    box-shadow: var(--shadow-lg);
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.modal-close {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--text-color);
+}
+
+.modal-body {
+    padding: 1rem;
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5rem;
+    padding: 1rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.drawer {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 300px;
+    height: 100%;
+    background-color: var(--card-bg);
+    box-shadow: var(--shadow-lg);
+    z-index: 1000;
+    transition: right 0.3s ease;
+}
+
+.drawer.active {
+    right: 0;
+}
+
+.drawer-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.drawer-close {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--text-color);
+}
+
+.drawer-body {
+    padding: 1rem;
+}
+
+&lt;!-- JavaScript --&gt;
+// Modal
+document.getElementById('openModal').addEventListener('click', function() {
+    document.getElementById('modal').classList.add('active');
+});
+
+document.querySelectorAll('.modal-close').forEach(button => {
+    button.addEventListener('click', function() {
+        document.getElementById('modal').classList.remove('active');
+    });
+});
+
+// Drawer
+document.getElementById('openDrawer').addEventListener('click', function() {
+    document.getElementById('drawer').classList.add('active');
+});
+
+document.querySelector('.drawer-close').addEventListener('click', function() {
+    document.getElementById('drawer').classList.remove('active');
+});</code></pre>
+            </div>
+          </div>
+        </section>
+
+        <!-- Dropdowns Section -->
+        <section id="dropdowns" class="component-section">
+          <h2 class="section-title">Dropdowns</h2>
+          <p class="section-description">Interactive dropdown menus for navigation and actions.</p>
+
+          <div class="component-showcase">
+            <div class="component-preview">
+              <h3>Basic Dropdown</h3>
+              <div class="component-example">
+                <div class="dropdown">
+                  <button class="dropdown-toggle">Dropdown <i class="fas fa-chevron-down"></i></button>
+                  <div class="dropdown-menu">
+                    <a href="#" class="dropdown-item">Action</a>
+                    <a href="#" class="dropdown-item">Another action</a>
+                    <a href="#" class="dropdown-item">Something else</a>
+                    <hr class="dropdown-divider">
+                    <a href="#" class="dropdown-item">Separated link</a>
+                  </div>
+                </div>
+              </div>
+
+              <h3>Dropdown with Icons</h3>
+              <div class="component-example">
+                <div class="dropdown">
+                  <button class="dropdown-toggle">Menu <i class="fas fa-chevron-down"></i></button>
+                  <div class="dropdown-menu">
+                    <a href="#" class="dropdown-item">
+                      <i class="fas fa-user"></i> Profile
+                    </a>
+                    <a href="#" class="dropdown-item">
+                      <i class="fas fa-cog"></i> Settings
+                    </a>
+                    <a href="#" class="dropdown-item">
+                      <i class="fas fa-sign-out-alt"></i> Logout
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="component-code">
+              <div class="code-header">
+                <h4>Code</h4>
+                <button class="copy-btn" data-target="dropdown-code">
+                  <i class="fas fa-copy"></i>
+                  Copy
+                </button>
+              </div>
+              <pre id="dropdown-code"><code>&lt;!-- HTML --&gt;
+&lt;div class="dropdown"&gt;
+    &lt;button class="dropdown-toggle"&gt;Dropdown &lt;i class="fas fa-chevron-down"&gt;&lt;/i&gt;&lt;/button&gt;
+    &lt;div class="dropdown-menu"&gt;
+        &lt;a href="#" class="dropdown-item"&gt;Action&lt;/a&gt;
+        &lt;a href="#" class="dropdown-item"&gt;Another action&lt;/a&gt;
+        &lt;a href="#" class="dropdown-item"&gt;Something else&lt;/a&gt;
+        &lt;hr class="dropdown-divider"&gt;
+        &lt;a href="#" class="dropdown-item"&gt;Separated link&lt;/a&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Dropdown with Icons --&gt;
+&lt;div class="dropdown"&gt;
+    &lt;button class="dropdown-toggle"&gt;Menu &lt;i class="fas fa-chevron-down"&gt;&lt;/i&gt;&lt;/button&gt;
+    &lt;div class="dropdown-menu"&gt;
+        &lt;a href="#" class="dropdown-item"&gt;
+            &lt;i class="fas fa-user"&gt;&lt;/i&gt; Profile
+        &lt;/a&gt;
+        &lt;a href="#" class="dropdown-item"&gt;
+            &lt;i class="fas fa-cog"&gt;&lt;/i&gt; Settings
+        &lt;/a&gt;
+        &lt;a href="#" class="dropdown-item"&gt;
+            &lt;i class="fas fa-sign-out-alt"&gt;&lt;/i&gt; Logout
+        &lt;/a&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- CSS --&gt;
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-toggle {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 0.375rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-color);
+}
+
+.dropdown-toggle i {
+    font-size: 0.75rem;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 0.375rem;
+    box-shadow: var(--shadow-md);
+    min-width: 10rem;
+    z-index: 100;
+    display: none;
+    padding: 0.5rem 0;
+}
+
+.dropdown.active .dropdown-menu {
+    display: block;
+}
+
+.dropdown-item {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: var(--text-color);
+    text-decoration: none;
+    transition: background-color 0.2s;
+}
+
+.dropdown-item:hover {
+    background-color: var(--hover-bg);
+}
+
+.dropdown-item i {
+    margin-right: 0.5rem;
+    width: 1rem;
+    text-align: center;
+}
+
+.dropdown-divider {
+    margin: 0.5rem 0;
+    border: none;
+    border-top: 1px solid var(--border-color);
+}
+
+&lt;!-- JavaScript --&gt;
+document.querySelectorAll('.dropdown-toggle').forEach(button => {
+    button.addEventListener('click', function() {
+        const dropdown = this.parentElement;
+
+        // Close all other dropdowns
+        document.querySelectorAll('.dropdown').forEach(d => {
+            if (d !== dropdown) {
+                d.classList.remove('active');
+            }
+        });
+
+        // Toggle current dropdown
+        dropdown.classList.toggle('active');
+    });
+});
+
+// Close dropdowns when clicking outside
+document.addEventListener('click', function(e) {
+    if (!e.target.closest('.dropdown')) {
+        document.querySelectorAll('.dropdown').forEach(dropdown => {
+            dropdown.classList.remove('active');
+        });
+    }
+});</code></pre>
+            </div>
+          </div>
+        </section>
+
+        <!-- Accordion Section -->
+        <section id="accordion" class="component-section">
+          <h2 class="section-title">Accordion</h2>
+          <p class="section-description">Collapsible content sections for organizing information.</p>
+
+          <div class="component-showcase">
+            <div class="component-preview">
+              <h3>Basic Accordion</h3>
+              <div class="component-example">
+                <div class="accordion">
+                  <div class="accordion-item">
+                    <button class="accordion-header">
+                      Accordion Item #1
+                      <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="accordion-content">
+                      <p>This is the first item's accordion body. It is shown by default.</p>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <button class="accordion-header">
+                      Accordion Item #2
+                      <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="accordion-content">
+                      <p>This is the second item's accordion body. It is hidden by default.</p>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <button class="accordion-header">
+                      Accordion Item #3
+                      <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="accordion-content">
+                      <p>This is the third item's accordion body. It is hidden by default.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="component-code">
+              <div class="code-header">
+                <h4>Code</h4>
+                <button class="copy-btn" data-target="accordion-code">
+                  <i class="fas fa-copy"></i>
+                  Copy
+                </button>
+              </div>
+              <pre id="accordion-code"><code>&lt;!-- HTML --&gt;
+&lt;div class="accordion"&gt;
+    &lt;div class="accordion-item"&gt;
+        &lt;button class="accordion-header"&gt;
+            Accordion Item #1
+            &lt;i class="fas fa-chevron-down"&gt;&lt;/i&gt;
+        &lt;/button&gt;
+        &lt;div class="accordion-content"&gt;
+            &lt;p&gt;This is the first item's accordion body. It is shown by default.&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="accordion-item"&gt;
+        &lt;button class="accordion-header"&gt;
+            Accordion Item #2
+            &lt;i class="fas fa-chevron-down"&gt;&lt;/i&gt;
+        &lt;/button&gt;
+        &lt;div class="accordion-content"&gt;
+            &lt;p&gt;This is the second item's accordion body. It is hidden by default.&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="accordion-item"&gt;
+        &lt;button class="accordion-header"&gt;
+            Accordion Item #3
+            &lt;i class="fas fa-chevron-down"&gt;&lt;/i&gt;
+        &lt;/button&gt;
+        &lt;div class="accordion-content"&gt;
+            &lt;p&gt;This is the third item's accordion body. It is hidden by default.&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- CSS --&gt;
+.accordion {
+    border: 1px solid var(--border-color);
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.accordion-item {
+    border-bottom: 1px solid var(--border-color);
+}
+
+.accordion-item:last-child {
+    border-bottom: none;
+}
+
+.accordion-header {
+    width: 100%;
+    background-color: var(--card-bg);
+    border: none;
+    padding: 1rem;
+    text-align: left;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;
+    color: var(--text-color);
+    transition: background-color 0.2s;
+}
+
+.accordion-header:hover {
+    background-color: var(--hover-bg);
+}
+
+.accordion-header i {
+    transition: transform 0.2s;
+}
+
+.accordion-item.active .accordion-header i {
+    transform: rotate(180deg);
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.accordion-item.active .accordion-content {
+    max-height: 500px;
+}
+
+.accordion-content p {
+    padding: 0 1rem 1rem;
+    color: var(--text-color);
+}
+
+&lt;!-- JavaScript --&gt;
+document.querySelectorAll('.accordion-header').forEach(button => {
+    button.addEventListener('click', function() {
+        const accordionItem = this.parentElement;
+        const accordion = accordionItem.parentElement;
+        const wasActive = accordionItem.classList.contains('active');
+
+        // Close all items
+        accordion.querySelectorAll('.accordion-item').forEach(item => {
+            item.classList.remove('active');
+        });
+
+        // Open clicked item if it wasn't active
+        if (!wasActive) {
+            accordionItem.classList.add('active');
+        }
+    });
+});</code></pre>
+            </div>
+          </div>
+        </section>
+
+        <!-- Tabs Section -->
+        <section id="tabs" class="component-section">
+          <h2 class="section-title">Tabs</h2>
+          <p class="section-description">Tabbed navigation for organizing content into sections.</p>
+
+          <div class="component-showcase">
+            <div class="component-preview">
+              <h3>Basic Tabs</h3>
+              <div class="component-example">
+                <div class="tabs">
+                  <div class="tab-list">
+                    <button class="tab-button active" data-tab="tab1">Tab 1</button>
+                    <button class="tab-button" data-tab="tab2">Tab 2</button>
+                    <button class="tab-button" data-tab="tab3">Tab 3</button>
+                  </div>
+                  <div class="tab-content">
+                    <div id="tab1" class="tab-pane active">
+                      <p>Content for Tab 1. This is the active tab by default.</p>
+                    </div>
+                    <div id="tab2" class="tab-pane">
+                      <p>Content for Tab 2. This tab is hidden by default.</p>
+                    </div>
+                    <div id="tab3" class="tab-pane">
+                      <p>Content for Tab 3. This tab is also hidden by default.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="component-code">
+              <div class="code-header">
+                <h4>Code</h4>
+                <button class="copy-btn" data-target="tabs-code">
+                  <i class="fas fa-copy"></i>
+                  Copy
+                </button>
+              </div>
+              <pre id="tabs-code"><code>&lt;!-- HTML --&gt;
+&lt;div class="tabs"&gt;
+    &lt;div class="tab-list"&gt;
+        &lt;button class="tab-button active" data-tab="tab1"&gt;Tab 1&lt;/button&gt;
+        &lt;button class="tab-button" data-tab="tab2"&gt;Tab 2&lt;/button&gt;
+        &lt;button class="tab-button" data-tab="tab3"&gt;Tab 3&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div class="tab-content"&gt;
+        &lt;div id="tab1" class="tab-pane active"&gt;
+            &lt;p&gt;Content for Tab 1. This is the active tab by default.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div id="tab2" class="tab-pane"&gt;
+            &lt;p&gt;Content for Tab 2. This tab is hidden by default.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div id="tab3" class="tab-pane"&gt;
+            &lt;p&gt;Content for Tab 3. This tab is also hidden by default.&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- CSS --&gt;
+.tabs {
+    width: 100%;
+}
+
+.tab-list {
+    display: flex;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.tab-button {
+    background: none;
+    border: none;
+    padding: 0.75rem 1rem;
+    cursor: pointer;
+    color: var(--text-color);
+    font-weight: 500;
+    position: relative;
+    transition: color 0.2s;
+}
+
+.tab-button:hover {
+    color: var(--primary-color);
+}
+
+.tab-button.active {
+    color: var(--primary-color);
+}
+
+.tab-button.active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--primary-color);
+}
+
+.tab-content {
+    padding: 1rem 0;
+}
+
+.tab-pane {
+    display: none;
+}
+
+.tab-pane.active {
+    display: block;
+}
+
+&lt;!-- JavaScript --&gt;
+document.querySelectorAll('.tab-button').forEach(button => {
+    button.addEventListener('click', function() {
+        const tabId = this.getAttribute('data-tab');
+        const tabsContainer = this.closest('.tabs');
+
+        // Remove active class from all buttons and panes
+        tabsContainer.querySelectorAll('.tab-button').forEach(btn => {
+            btn.classList.remove('active');
+        });
+
+        tabsContainer.querySelectorAll('.tab-pane').forEach(pane => {
+            pane.classList.remove('active');
+        });
+
+        // Add active class to clicked button and corresponding pane
+        this.classList.add('active');
+        document.getElementById(tabId).classList.add('active');
+    });
+});</code></pre>
+            </div>
+          </div>
+        </section>
+
+        <!-- Tooltips Section -->
+        <section id="tooltips" class="component-section">
+          <h2 class="section-title">Tooltips & Popovers</h2>
+          <p class="section-description">Contextual help and information overlays.</p>
+
+          <div class="component-showcase">
+            <div class="component-preview">
+              <h3>Tooltip Examples</h3>
+              <div class="component-example">
+                <button class="btn btn-primary tooltip-container" data-tooltip="This is a tooltip">
+                  Hover me
+                </button>
+                <button class="btn btn-secondary tooltip-container" data-tooltip="This is another tooltip">
+                  Hover me too
+                </button>
+                <button class="btn btn-outline tooltip-container" data-tooltip="This tooltip has a lot more text to show how it handles longer content">
+                  Long tooltip
+                </button>
+              </div>
+
+              <h3>Popover Example</h3>
+              <div class="component-example">
+                <button id="popoverButton" class="btn btn-primary">Click for Popover</button>
+                <div id="popover" class="popover">
+                  <div class="popover-header">
+                    <h4>Popover Title</h4>
+                  </div>
+                  <div class="popover-body">
+                    <p>This is a popover with more detailed information.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="component-code">
+              <div class="code-header">
+                <h4>Code</h4>
+                <button class="copy-btn" data-target="tooltip-code">
+                  <i class="fas fa-copy"></i>
+                  Copy
+                </button>
+              </div>
+              <pre id="tooltip-code"><code>&lt;!-- HTML --&gt;
+&lt;button class="btn btn-primary tooltip-container" data-tooltip="This is a tooltip"&gt;
+    Hover me
+&lt;/button&gt;
+
+&lt;button id="popoverButton" class="btn btn-primary"&gt;Click for Popover&lt;/button&gt;
+&lt;div id="popover" class="popover"&gt;
+    &lt;div class="popover-header"&gt;
+        &lt;h4&gt;Popover Title&lt;/h4&gt;
+    &lt;/div&gt;
+    &lt;div class="popover-body"&gt;
+        &lt;p&gt;This is a popover with more detailed information.&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- CSS --&gt;
+.tooltip-container {
+    position: relative;
+}
+
+.tooltip {
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--tooltip-bg);
+    color: var(--tooltip-text);
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.25rem;
+    font-size: 0.875rem;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s, visibility 0.2s;
+    z-index: 100;
+    margin-bottom: 0.5rem;
+    max-width: 200px;
+    white-space: normal;
+    text-align: center;
+}
+
+.tooltip-container:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
+}
+
+.tooltip::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 5px;
+    border-style: solid;
+    border-color: var(--tooltip-bg) transparent transparent transparent;
+}
+
+.popover {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 0.5rem;
+    box-shadow: var(--shadow-lg);
+    width: 250px;
+    z-index: 100;
+    margin-top: 0.5rem;
+    display: none;
+}
+
+.popover.active {
+    display: block;
+}
+
+.popover-header {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.popover-header h4 {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.popover-body {
+    padding: 0.75rem 1rem;
+}
+
+.popover-body p {
+    margin: 0;
+    font-size: 0.875rem;
+    color: var(--text-color);
+}
+
+&lt;!-- JavaScript --&gt;
+// Tooltips
+document.querySelectorAll('.tooltip-container').forEach(element => {
+    const tooltipText = element.getAttribute('data-tooltip');
+    const tooltip = document.createElement('div');
+    tooltip.className = 'tooltip';
+    tooltip.textContent = tooltipText;
+    element.appendChild(tooltip);
+});
+
+// Popover
+document.getElementById('popoverButton').addEventListener('click', function() {
+    const popover = document.getElementById('popover');
+    popover.classList.toggle('active');
+});
+
+// Close popover when clicking outside
+document.addEventListener('click', function(e) {
+    const popoverButton = document.getElementById('popoverButton');
+    const popover = document.getElementById('popover');
+
+    if (!popoverButton.contains(e.target) && !popover.contains(e.target)) {
+        popover.classList.remove('active');
+    }
+});</code></pre>
+            </div>
+          </div>
+        </section>
+
+        <!-- Navigation Section -->
+        <section id="navigation" class="component-section">
+          <h2 class="section-title">Navigation</h2>
+          <p class="section-description">Navigation components including navbars, sidebars, and breadcrumbs.</p>
+
+          <div class="component-showcase">
+            <div class="component-preview">
+              <h3>Navbar</h3>
+              <div class="component-example">
+                <nav class="navbar">
+                  <div class="navbar-brand">
+                    <i class="fas fa-cube"></i>
+                    <span>Brand</span>
+                  </div>
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a href="#" class="nav-link active">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#" class="nav-link">Features</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#" class="nav-link">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#" class="nav-link">Contact</a>
+                    </li>
+                  </ul>
+                  <div class="navbar-actions">
+                    <button class="btn btn-outline btn-sm">Sign In</button>
+                    <button class="btn btn-primary btn-sm">Sign Up</button>
+                  </div>
+                </nav>
+              </div>
+
+              <h3>Breadcrumbs</h3>
+              <div class="component-example">
+                <nav class="breadcrumb">
+                  <a href="#" class="breadcrumb-item">Home</a>
+                  <a href="#" class="breadcrumb-item">Components</a>
+                  <a href="#" class="breadcrumb-item">Navigation</a>
+                  <span class="breadcrumb-item active">Breadcrumbs</span>
+                </nav>
+              </div>
+            </div>
+
+            <div class="component-code">
+              <div class="code-header">
+                <h4>Code</h4>
+                <button class="copy-btn" data-target="navigation-code">
+                  <i class="fas fa-copy"></i>
+                  Copy
+                </button>
+              </div>
+              <pre id="navigation-code"><code>&lt;!-- HTML --&gt;
+&lt;!-- Navbar --&gt;
+&lt;nav class="navbar"&gt;
+    &lt;div class="navbar-brand"&gt;
+        &lt;i class="fas fa-cube"&gt;&lt;/i&gt;
+        &lt;span&gt;Brand&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;ul class="navbar-nav"&gt;
+        &lt;li class="nav-item"&gt;
+            &lt;a href="#" class="nav-link active"&gt;Home&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class="nav-item"&gt;
+            &lt;a href="#" class="nav-link"&gt;Features&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class="nav-item"&gt;
+            &lt;a href="#" class="nav-link"&gt;Pricing&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class="nav-item"&gt;
+            &lt;a href="#" class="nav-link"&gt;About&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class="nav-item"&gt;
+            &lt;a href="#" class="nav-link"&gt;Contact&lt;/a&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;div class="navbar-actions"&gt;
+        &lt;button class="btn btn-outline btn-sm"&gt;Sign In&lt;/button&gt;
+        &lt;button class="btn btn-primary btn-sm"&gt;Sign Up&lt;/button&gt;
+    &lt;/div&gt;
+&lt;/nav&gt;
+
+&lt;!-- Breadcrumbs --&gt;
+&lt;nav class="breadcrumb"&gt;
+    &lt;a href="#" class="breadcrumb-item"&gt;Home&lt;/a&gt;
+    &lt;a href="#" class="breadcrumb-item"&gt;Components&lt;/a&gt;
+    &lt;a href="#" class="breadcrumb-item"&gt;Navigation&lt;/a&gt;
+    &lt;span class="breadcrumb-item active"&gt;Breadcrumbs&lt;/span&gt;
+&lt;/nav&gt;
+
+&lt;!-- CSS --&gt;
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.75rem 1rem;
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: var(--text-color);
+}
+
+.navbar-brand i {
+    margin-right: 0.5rem;
+    color: var(--primary-color);
+}
+
+.navbar-nav {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    margin: 0 0.5rem;
+}
+
+.nav-link {
+    display: block;
+    padding: 0.5rem 0.75rem;
+    color: var(--text-color);
+    text-decoration: none;
+    border-radius: 0.25rem;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.nav-link:hover {
+    background-color: var(--hover-bg);
+    color: var(--primary-color);
+}
+
+.nav-link.active {
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+.navbar-actions {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.breadcrumb {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0.75rem 0;
+    list-style: none;
+}
+
+.breadcrumb-item {
+    display: flex;
+    align-items: center;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    content: "/";
+    margin: 0 0.5rem;
+    color: var(--text-muted);
+}
+
+.breadcrumb-item a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.breadcrumb-item a:hover {
+    color: var(--primary-hover);
+}
+
+.breadcrumb-item.active {
+    color: var(--text-muted);
+}</code></pre>
+            </div>
+          </div>
+        </section>
+
+        <!-- Pagination Section -->
+        <section id="pagination" class="component-section">
+          <h2 class="section-title">Pagination</h2>
+          <p class="section-description">Navigation controls for paginated content.</p>
+
+          <div class="component-showcase">
+            <div class="component-preview">
+              <h3>Basic Pagination</h3>
+              <div class="component-example">
+                <nav class="pagination">
+                  <a href="#" class="page-link disabled">
+                    <i class="fas fa-chevron-left"></i>
+                  </a>
+                  <a href="#" class="page-link active">1</a>
+                  <a href="#" class="page-link">2</a>
+                  <a href="#" class="page-link">3</a>
+                  <span class="page-link">...</span>
+                  <a href="#" class="page-link">10</a>
+                  <a href="#" class="page-link">
+                    <i class="fas fa-chevron-right"></i>
+                  </a>
+                </nav>
+              </div>
+            </div>
+
+            <div class="component-code">
+              <div class="code-header">
+                <h4>Code</h4>
+                <button class="copy-btn" data-target="pagination-code">
+                  <i class="fas fa-copy"></i>
+                  Copy
+                </button>
+              </div>
+              <pre id="pagination-code"><code>&lt;!-- HTML --&gt;
+&lt;nav class="pagination"&gt;
+    &lt;a href="#" class="page-link disabled"&gt;
+        &lt;i class="fas fa-chevron-left"&gt;&lt;/i&gt;
+    &lt;/a&gt;
+    &lt;a href="#" class="page-link active"&gt;1&lt;/a&gt;
+    &lt;a href="#" class="page-link"&gt;2&lt;/a&gt;
+    &lt;a href="#" class="page-link"&gt;3&lt;/a&gt;
+    &lt;span class="page-link"&gt;...&lt;/span&gt;
+    &lt;a href="#" class="page-link"&gt;10&lt;/a&gt;
+    &lt;a href="#" class="page-link"&gt;
+        &lt;i class="fas fa-chevron-right"&gt;&lt;/i&gt;
+    &lt;/a&gt;
+&lt;/nav&gt;
+
+&lt;!-- CSS --&gt;
+.pagination {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.page-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    margin: 0 0.25rem;
+    color: var(--text-color);
+    text-decoration: none;
+    border-radius: 0.375rem;
+    transition: background-color 0.2s, color 0.2s;
+    border: 1px solid var(--border-color);
+}
+
+.page-link:hover {
+    background-color: var(--hover-bg);
+    color: var(--primary-color);
+}
+
+.page-link.active {
+    background-color: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
+}
+
+.page-link.disabled {
+    color: var(--text-muted);
+    pointer-events: none;
+    opacity: 0.5;
+}</code></pre>
+            </div>
+          </div>
+        </section>
+
+        <!-- Tables Section -->
+        <section id="tables" class="component-section">
+          <h2 class="section-title">Tables</h2>
+          <p class="section-description">Structured data display with various table styles.</p>
+
+          <div class="component-showcase">
+            <div class="component-preview">
+              <h3>Simple Table</h3>
+              <div class="component-example">
+                <div class="table-container">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th>Name</th>
+                        <th>Position</th>
+                        <th>Office</th>
+                        <th>Age</th>
+                        <th>Start date</th>
+                        <th>Salary</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Tiger Nixon</td>
+                        <td>System Architect</td>
+                        <td>Edinburgh</td>
+                        <td>61</td>
+                        <td>2011/04/25</td>
+                        <td>$320,800</td>
+                      </tr>
+                      <tr>
+                        <td>Garrett Winters</td>
+                        <td>Accountant</td>
+                        <td>Tokyo</td>
+                        <td>63</td>
+                        <td>2011/07/25</td>
+                        <td>$170,750</td>
+                      </tr>
+                      <tr>
+                        <td>Ashton Cox</td>
+                        <td>Junior Technical Author</td>
+                        <td>San Francisco</td>
+                        <td>66</td>
+                        <td>2009/01/12</td>
+                        <td>$86,000</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+              <h3>Striped Table</h3>
+              <div class="component-example">
+                <div class="table-container">
+                  <table class="table table-striped">
+                    <thead>
+                      <tr>
+                        <th>Name</th>
+                        <th>Position</th>
+                        <th>Office</th>
+                        <th>Age</th>
+                        <th>Start date</th>
+                        <th>Salary</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Tiger Nixon</td>
+                        <td>System Architect</td>
+                        <td>Edinburgh</td>
+                        <td>61</td>
+                        <td>2011/04/25</td>
+                        <td>$320,800</td>
+                      </tr>
+                      <tr>
+                        <td>Garrett Winters</td>
+                        <td>Accountant</td>
+                        <td>Tokyo</td>
+                        <td>63</td>
+                        <td>2011/07/25</td>
+                        <td>$170,750</td>
+                      </tr>
+                      <tr>
+                        <td>Ashton Cox</td>
+                        <td>Junior Technical Author</td>
+                        <td>San Francisco</td>
+                        <td>66</td>
+                        <td>2009/01/12</td>
+                        <td>$86,000</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+            <div class="component-code">
+              <div class="code-header">
+                <h4>Code</h4>
+                <button class="copy-btn" data-target="table-code">
+                  <i class="fas fa-copy"></i>
+                  Copy
+                </button>
+              </div>
+              <pre id="table-code"><code>&lt;!-- HTML --&gt;
+&lt;div class="table-container"&gt;
+    &lt;table class="table"&gt;
+        &lt;thead&gt;
+            &lt;tr&gt;
+                &lt;th&gt;Name&lt;/th&gt;
+                &lt;th&gt;Position&lt;/th&gt;
+                &lt;th&gt;Office&lt;/th&gt;
+                &lt;th&gt;Age&lt;/th&gt;
+                &lt;th&gt;Start date&lt;/th&gt;
+                &lt;th&gt;Salary&lt;/th&gt;
+            &lt;/tr&gt;
+        &lt;/thead&gt;
+        &lt;tbody&gt;
+            &lt;tr&gt;
+                &lt;td&gt;Tiger Nixon&lt;/td&gt;
+                &lt;td&gt;System Architect&lt;/td&gt;
+                &lt;td&gt;Edinburgh&lt;/td&gt;
+                &lt;td&gt;61&lt;/td&gt;
+                &lt;td&gt;2011/04/25&lt;/td&gt;
+                &lt;td&gt;$320,800&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;Garrett Winters&lt;/td&gt;
+                &lt;td&gt;Accountant&lt;/td&gt;
+                &lt;td&gt;Tokyo&lt;/td&gt;
+                &lt;td&gt;63&lt;/td&gt;
+                &lt;td&gt;2011/07/25&lt;/td&gt;
+                &lt;td&gt;$170,750&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;Ashton Cox&lt;/td&gt;
+                &lt;td&gt;Junior Technical Author&lt;/td&gt;
+                &lt;td&gt;San Francisco&lt;/td&gt;
+                &lt;td&gt;66&lt;/td&gt;
+                &lt;td&gt;2009/01/12&lt;/td&gt;
+                &lt;td&gt;$86,000&lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/tbody&gt;
+    &lt;/table&gt;
+&lt;/div&gt;
+
+&lt;!-- Striped Table --&gt;
+&lt;div class="table-container"&gt;
+    &lt;table class="table table-striped"&gt;
+        &lt;!-- Table content --&gt;
+    &lt;/table&gt;
+&lt;/div&gt;
+
+&lt;!-- CSS --&gt;
+.table-container {
+    overflow-x: auto;
+    margin-bottom: 1rem;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--card-bg);
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.table th,
+.table td {
+    padding: 0.75rem 1rem;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.table th {
+    background-color: var(--table-header-bg);
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.table tbody tr:hover {
+    background-color: var(--hover-bg);
+}
+
+.table-striped tbody tr:nth-child(even) {
+    background-color: var(--table-striped-bg);
+}
+
+.table-striped tbody tr:nth-child(even):hover {
+    background-color: var(--hover-bg);
+}</code></pre>
+            </div>
+          </div>
+        </section>
+
+        <!-- Grid Layouts Section -->
+        <section id="grids" class="component-section">
+          <h2 class="section-title">Grid Layouts</h2>
+          <p class="section-description">Responsive grid systems for organizing content.</p>
+
+          <div class="component-showcase">
+            <div class="component-preview">
+              <h3>Basic Grid</h3>
+              <div class="component-example">
+                <div class="grid">
+                  <div class="grid-item">1</div>
+                  <div class="grid-item">2</div>
+                  <div class="grid-item">3</div>
+                  <div class="grid-item">4</div>
+                  <div class="grid-item">5</div>
+                  <div class="grid-item">6</div>
+                </div>
+              </div>
+
+              <h3>Grid with Gaps</h3>
+              <div class="component-example">
+                <div class="grid grid-gap">
+                  <div class="grid-item">1</div>
+                  <div class="grid-item">2</div>
+                  <div class="grid-item">3</div>
+                  <div class="grid-item">4</div>
+                </div>
+              </div>
+
+              <h3>Responsive Grid</h3>
+              <div class="component-example">
+                <div class="grid grid-responsive">
+                  <div class="grid-item">1</div>
+                  <div class="grid-item">2</div>
+                  <div class="grid-item">3</div>
+                  <div class="grid-item">4</div>
+                  <div class="grid-item">5</div>
+                  <div class="grid-item">6</div>
+                  <div class="grid-item">7</div>
+                  <div class="grid-item">8</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="component-code">
+              <div class="code-header">
+                <h4>Code</h4>
+                <button class="copy-btn" data-target="grid-code">
+                  <i class="fas fa-copy"></i>
+                  Copy
+                </button>
+              </div>
+              <pre id="grid-code"><code>&lt;!-- HTML --&gt;
+&lt;div class="grid"&gt;
+&lt;div class="grid-item"&gt;1&lt;/div&gt;
+&lt;div class="grid-item"&gt;2&lt;/div&gt;
+&lt;div class="grid-item"&gt;3&lt;/div&gt;
+&lt;div class="grid-item"&gt;4&lt;/div&gt;
+&lt;div class="grid-item"&gt;5&lt;/div&gt;
+&lt;div class="grid-item"&gt;6&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Grid with Gaps --&gt;
+&lt;div class="grid grid-gap"&gt;
+&lt;div class="grid-item"&gt;1&lt;/div&gt;
+&lt;div class="grid-item"&gt;2&lt;/div&gt;
+&lt;div class="grid-item"&gt;3&lt;/div&gt;
+&lt;div class="grid-item"&gt;4&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Responsive Grid --&gt;
+&lt;div class="grid grid-responsive"&gt;
+&lt;div class="grid-item"&gt;1&lt;/div&gt;
+&lt;div class="grid-item"&gt;2&lt;/div&gt;
+&lt;div class="grid-item"&gt;3&lt;/div&gt;
+&lt;div class="grid-item"&gt;4&lt;/div&gt;
+&lt;div class="grid-item"&gt;5&lt;/div&gt;
+&lt;div class="grid-item"&gt;6&lt;/div&gt;
+&lt;div class="grid-item"&gt;7&lt;/div&gt;
+&lt;div class="grid-item"&gt;8&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- CSS --&gt;
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+}
+
+.grid-gap {
+    gap: 1rem;
+}
+
+.grid-responsive {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.grid-item {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 0.375rem;
+    padding: 1rem;
+    text-align: center;
+    font-weight: 500;
+    color: var(--text-color);
+}</code></pre>
+            </div>
+          </div>
+        </section>
+
+        <!-- Avatars Section -->
+        <section id="avatars" class="component-section">
+          <h2 class="section-title">Avatars</h2>
+          <p class="section-description">User profile images and placeholders.</p>
+
+          <div class="component-showcase">
+            <div class="component-preview">
+              <h3>Avatar Sizes</h3>
+              <div class="component-example">
+                <div class="avatar-container">
+                  <img src="https://picsum.photos/seed/avatar1/100/100.jpg" alt="Avatar" class="avatar avatar-xs">
+                  <img src="https://picsum.photos/seed/avatar2/100/100.jpg" alt="Avatar" class="avatar avatar-sm">
+                  <img src="https://picsum.photos/seed/avatar3/100/100.jpg" alt="Avatar" class="avatar avatar-md">
+                  <img src="https://picsum.photos/seed/avatar4/100/100.jpg" alt="Avatar" class="avatar avatar-lg">
+                  <img src="https://picsum.photos/seed/avatar5/100/100.jpg" alt="Avatar" class="avatar avatar-xl">
+                </div>
+              </div>
+
+              <h3>Avatar with Status</h3>
+              <div class="component-example">
+                <div class="avatar-container">
+                  <div class="avatar-wrapper">
+                    <img src="https://picsum.photos/seed/avatar6/100/100.jpg" alt="Avatar" class="avatar avatar-md">
+                    <span class="avatar-status avatar-status-online"></span>
+                  </div>
+                  <div class="avatar-wrapper">
+                    <img src="https://picsum.photos/seed/avatar7/100/100.jpg" alt="Avatar" class="avatar avatar-md">
+                    <span class="avatar-status avatar-status-away"></span>
+                  </div>
+                  <div class="avatar-wrapper">
+                    <img src="https://picsum.photos/seed/avatar8/100/100.jpg" alt="Avatar" class="avatar avatar-md">
+                    <span class="avatar-status avatar-status-offline"></span>
+                  </div>
+                </div>
+              </div>
+
+              <h3>Avatar Group</h3>
+              <div class="component-example">
+                <div class="avatar-group">
+                  <img src="https://picsum.photos/seed/avatar9/100/100.jpg" alt="Avatar" class="avatar avatar-sm">
+                  <img src="https://picsum.photos/seed/avatar10/100/100.jpg" alt="Avatar" class="avatar avatar-sm">
+                  <img src="https://picsum.photos/seed/avatar11/100/100.jpg" alt="Avatar" class="avatar avatar-sm">
+                  <img src="https://picsum.photos/seed/avatar12/100/100.jpg" alt="Avatar" class="avatar avatar-sm">
+                  <div class="avatar avatar-sm avatar-more">+5</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="component-code">
+              <div class="code-header">
+                <h4>Code</h4>
+                <button class="copy-btn" data-target="avatar-code">
+                  <i class="fas fa-copy"></i>
+                  Copy
+                </button>
+              </div>
+              <pre id="avatar-code"><code>&lt;!-- HTML --&gt;
+&lt;!-- Avatar Sizes --&gt;
+&lt;img src="avatar.jpg" alt="Avatar" class="avatar avatar-xs"&gt;
+&lt;img src="avatar.jpg" alt="Avatar" class="avatar avatar-sm"&gt;
+&lt;img src="avatar.jpg" alt="Avatar" class="avatar avatar-md"&gt;
+&lt;img src="avatar.jpg" alt="Avatar" class="avatar avatar-lg"&gt;
+&lt;img src="avatar.jpg" alt="Avatar" class="avatar avatar-xl"&gt;
+
+&lt;!-- Avatar with Status --&gt;
+&lt;div class="avatar-wrapper"&gt;
+&lt;img src="avatar.jpg" alt="Avatar" class="avatar avatar-md"&gt;
+&lt;span class="avatar-status avatar-status-online"&gt;&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;!-- Avatar Group --&gt;
+&lt;div class="avatar-group"&gt;
+&lt;img src="avatar1.jpg" alt="Avatar" class="avatar avatar-sm"&gt;
+&lt;img src="avatar2.jpg" alt="Avatar" class="avatar avatar-sm"&gt;
+&lt;img src="avatar3.jpg" alt="Avatar" class="avatar avatar-sm"&gt;
+&lt;img src="avatar4.jpg" alt="Avatar" class="avatar avatar-sm"&gt;
+&lt;div class="avatar avatar-sm avatar-more"&gt;+5&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- CSS --&gt;
+.avatar {
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.avatar-xs {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.avatar-sm {
+    width: 2rem;
+    height: 2rem;
+}
+
+.avatar-md {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.avatar-lg {
+    width: 3rem;
+    height: 3rem;
+}
+
+.avatar-xl {
+    width: 4rem;
+    height: 4rem;
+}
+
+.avatar-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.avatar-status {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0.75rem;
+    height: 0.75rem;
+    border-radius: 50%;
+    border: 2px solid var(--card-bg);
+}
+
+.avatar-status-online {
+    background-color: #22c55e;
+}
+
+.avatar-status-away {
+    background-color: #f59e0b;
+}
+
+.avatar-status-offline {
+    background-color: #6b7280;
+}
+
+.avatar-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.avatar-group {
+    display: flex;
+    align-items: center;
+}
+
+.avatar-group .avatar {
+    margin-left: -0.5rem;
+    border: 2px solid var(--card-bg);
+}
+
+.avatar-group .avatar:first-child {
+    margin-left: 0;
+}
+
+.avatar-more {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 0.75rem;
+    font-weight: 500;
+}</code></pre>
+            </div>
+          </div>
+        </section>
+
+        <!-- Loading States Section -->
+        <section id="loading" class="component-section">
+          <h2 class="section-title">Loading States</h2>
+          <p class="section-description">Spinners and skeleton loaders for indicating loading states.</p>
+
+          <div class="component-showcase">
+            <div class="component-preview">
+              <h3>Loading Spinners</h3>
+              <div class="component-example">
+                <div class="spinner-container">
+                  <div class="spinner spinner-sm"></div>
+                  <div class="spinner spinner-md"></div>
+                  <div class="spinner spinner-lg"></div>
+                  <div class="spinner spinner-primary"></div>
+                  <div class="spinner spinner-secondary"></div>
+                </div>
+              </div>
+
+              <h3>Skeleton Loading</h3>
+              <div class="component-example">
+                <div class="skeleton-card">
+                  <div class="skeleton skeleton-avatar"></div>
+                  <div class="skeleton-info">
+                    <div class="skeleton skeleton-text skeleton-title"></div>
+                    <div class="skeleton skeleton-text"></div>
+                    <div class="skeleton skeleton-text skeleton-sm"></div>
+                  </div>
+                </div>
+
+                <div class="skeleton-list">
+                  <div class="skeleton skeleton-item"></div>
+                  <div class="skeleton skeleton-item"></div>
+                  <div class="skeleton skeleton-item"></div>
+                  <div class="skeleton skeleton-item"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="component-code">
+              <div class="code-header">
+                <h4>Code</h4>
+                <button class="copy-btn" data-target="loading-code">
+                  <i class="fas fa-copy"></i>
+                  Copy
+                </button>
+              </div>
+              <pre id="loading-code"><code>&lt;!-- HTML --&gt;
+&lt;!-- Loading Spinners --&gt;
+&lt;div class="spinner spinner-sm"&gt;&lt;/div&gt;
+&lt;div class="spinner spinner-md"&gt;&lt;/div&gt;
+&lt;div class="spinner spinner-lg"&gt;&lt;/div&gt;
+&lt;div class="spinner spinner-primary"&gt;&lt;/div&gt;
+&lt;div class="spinner spinner-secondary"&gt;&lt;/div&gt;
+
+&lt;!-- Skeleton Loading --&gt;
+&lt;div class="skeleton-card"&gt;
+&lt;div class="skeleton skeleton-avatar"&gt;&lt;/div&gt;
+&lt;div class="skeleton-info"&gt;
+    &lt;div class="skeleton skeleton-text skeleton-title"&gt;&lt;/div&gt;
+    &lt;div class="skeleton skeleton-text"&gt;&lt;/div&gt;
+    &lt;div class="skeleton skeleton-text skeleton-sm"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="skeleton-list"&gt;
+&lt;div class="skeleton skeleton-item"&gt;&lt;/div&gt;
+&lt;div class="skeleton skeleton-item"&gt;&lt;/div&gt;
+&lt;div class="skeleton skeleton-item"&gt;&lt;/div&gt;
+&lt;div class="skeleton skeleton-item"&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- CSS --&gt;
+.spinner {
+    border: 3px solid var(--border-color);
+    border-top: 3px solid var(--primary-color);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+.spinner-sm {
+    width: 1rem;
+    height: 1rem;
+    border-width: 2px;
+}
+
+.spinner-md {
+    width: 2rem;
+    height: 2rem;
+}
+
+.spinner-lg {
+    width: 3rem;
+    height: 3rem;
+    border-width: 4px;
+}
+
+.spinner-primary {
+    border-top-color: var(--primary-color);
+}
+
+.spinner-secondary {
+    border-top-color: var(--secondary-color);
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.spinner-container {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.skeleton {
+    background: linear-gradient(90deg, var(--skeleton-bg) 25%, var(--skeleton-shine) 50%, var(--skeleton-bg) 75%);
+    background-size: 200% 100%;
+    animation: loading 1.5s infinite;
+    border-radius: 0.25rem;
+}
+
+.skeleton-avatar {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.skeleton-text {
+    height: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.skeleton-title {
+    width: 60%;
+    height: 1.25rem;
+}
+
+.skeleton-sm {
+    width: 40%;
+    height: 0.75rem;
+}
+
+.skeleton-item {
+    height: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.skeleton-card {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.skeleton-list {
+    padding: 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 0.5rem;
+}
+
+@keyframes loading {
+    0% {
+        background-position: 200% 0;
+    }
+    100% {
+        background-position: -200% 0;
+    }
+}</code></pre>
+            </div>
+          </div>
+        </section>
+
+        <!-- Toast Messages Section -->
+        <section id="toasts" class="component-section">
+          <h2 class="section-title">Toast Messages</h2>
+          <p class="section-description">Temporary notification messages for user feedback.</p>
+
+          <div class="component-showcase">
+            <div class="component-preview">
+              <h3>Toast Examples</h3>
+              <div class="component-example">
+                <button id="showToastSuccess" class="btn btn-success">Show Success Toast</button>
+                <button id="showToastError" class="btn btn-error">Show Error Toast</button>
+                <button id="showToastInfo" class="btn btn-info">Show Info Toast</button>
+                <button id="showToastWarning" class="btn btn-warning">Show Warning Toast</button>
+              </div>
+            </div>
+
+            <div class="component-code">
+              <div class="code-header">
+                <h4>Code</h4>
+                <button class="copy-btn" data-target="toast-code">
+                  <i class="fas fa-copy"></i>
+                  Copy
+                </button>
+              </div>
+              <pre id="toast-code"><code>&lt;!-- HTML --&gt;
+&lt;button id="showToastSuccess" class="btn btn-success"&gt;Show Success Toast&lt;/button&gt;
+&lt;button id="showToastError" class="btn btn-error"&gt;Show Error Toast&lt;/button&gt;
+&lt;button id="showToastInfo" class="btn btn-info"&gt;Show Info Toast&lt;/button&gt;
+&lt;button id="showToastWarning" class="btn btn-warning"&gt;Show Warning Toast&lt;/button&gt;
+
+&lt;!-- Toast Container --&gt;
+&lt;div id="toastContainer" class="toast-container"&gt;&lt;/div&gt;
+
+&lt;!-- CSS --&gt;
+.toast-container {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.toast {
+    min-width: 250px;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: var(--shadow-lg);
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    animation: slideIn 0.3s ease;
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+.toast.hiding {
+    opacity: 0;
+    transform: translateX(100%);
+}
+
+.toast-success {
+    background-color: #22c55e;
+    color: white;
+}
+
+.toast-error {
+    background-color: #ef4444;
+    color: white;
+}
+
+.toast-info {
+    background-color: #3b82f6;
+    color: white;
+}
+
+.toast-warning {
+    background-color: #f59e0b;
+    color: white;
+}
+
+.toast-message {
+    flex: 1;
+}
+
+.toast-close {
+    background: none;
+    border: none;
+    color: inherit;
+    cursor: pointer;
+    font-size: 1.25rem;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+}
+
+.toast-close:hover {
+    opacity: 1;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+&lt;!-- JavaScript --&gt;
+function showToast(message, type = 'info') {
+    const toastContainer = document.getElementById('toastContainer');
+
+    const toast = document.createElement('div');
+    toast.className = `toast toast-${type}`;
+
+    const icon = {
+        success: 'fa-check-circle',
+        error: 'fa-times-circle',
+        info: 'fa-info-circle',
+        warning: 'fa-exclamation-triangle'
+    }[type];
+
+    toast.innerHTML = `
+        &lt;i class="fas ${icon}"&gt;&lt;/i&gt;
+        &lt;div class="toast-message"&gt;${message}&lt;/div&gt;
+        &lt;button class="toast-close"&gt;&times;&lt;/button&gt;
+    `;
+
+    toastContainer.appendChild(toast);
+
+    // Close button
+    toast.querySelector('.toast-close').addEventListener('click', () => {
+        removeToast(toast);
+    });
+
+    // Auto remove after 5 seconds
+    setTimeout(() => {
+        removeToast(toast);
+    }, 5000);
+}
+
+function removeToast(toast) {
+    toast.classList.add('hiding');
+    setTimeout(() => {
+        toast.remove();
+    }, 300);
+}
+
+// Show toast buttons
+document.getElementById('showToastSuccess').addEventListener('click', () => {
+    showToast('Operation completed successfully!', 'success');
+});
+
+document.getElementById('showToastError').addEventListener('click', () => {
+    showToast('An error occurred. Please try again.', 'error');
+});
+
+document.getElementById('showToastInfo').addEventListener('click', () => {
+    showToast('Here is some useful information.', 'info');
+});
+
+document.getElementById('showToastWarning').addEventListener('click', () => {
+    showToast('Please review your input.', 'warning');
+});</code></pre>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+  </div>
+
+  <!-- Toast Container -->
+  <div id="toastContainer" class="toast-container"></div>
+
+  <!-- Modal -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3>Modal Title</h3>
+        <button class="modal-close">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p>This is the modal content. You can put any HTML content here.</p>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary modal-close">Cancel</button>
+        <button class="btn btn-primary">Save Changes</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Drawer -->
+  <div id="drawer" class="drawer">
+    <div class="drawer-content">
+      <div class="drawer-header">
+        <h3>Drawer Title</h3>
+        <button class="drawer-close">&times;</button>
+      </div>
+      <div class="drawer-body">
+        <p>This is the drawer content that slides in from the side.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
